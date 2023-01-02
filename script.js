@@ -24,7 +24,11 @@ convert.addEventListener("click",function(){
 
 
     if(input.value==""){
-        result.value="Please Enter Input";
+        result.value="Please Enter Some Input";
+        input.setAttribute('style','background-color:#ffcaca;');
+        input.addEventListener('click',()=>{
+            input.removeAttribute('style','background-color:#ffcaca;');
+        })
     }
     else {
 
@@ -34,7 +38,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,2);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Binary Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }
         }
         else if(convertFrom == "from-binary" && convertTo == "to-hexadecimal"){
@@ -42,7 +50,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,2).toString(16).toUpperCase();
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Binary Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }       
         }
         else if(convertFrom == "from-binary" && convertTo == "to-octal"){
@@ -50,7 +62,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,2).toString(8);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Binary Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }       
         }
         else if(convertFrom == "from-binary" && convertTo == "to-binary"){
@@ -58,7 +74,11 @@ convert.addEventListener("click",function(){
                 result.value = input.value;
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Binary Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }             
         }
         else if(convertFrom == "from-decimal" && convertTo == "to-binary"){
@@ -66,7 +86,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value).toString(2);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Decimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }             
         }
         else if(convertFrom == "from-decimal" && convertTo == "to-hexadecimal"){
@@ -74,7 +98,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value).toString(16).toUpperCase();
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Decimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }                 
         }
         else if(convertFrom == "from-decimal" && convertTo == "to-octal"){
@@ -82,7 +110,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value).toString(8);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Decimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }          
         }
         else if(convertFrom == "from-decimal" && convertTo == "to-decimal"){
@@ -90,7 +122,11 @@ convert.addEventListener("click",function(){
                 result.value = input.value;
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Decimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }          
         }
         else if(convertFrom == "from-octal" && convertTo == "to-decimal"){
@@ -98,7 +134,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,8).toString(10);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Octal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }               
         }
         else if(convertFrom == "from-octal" && convertTo == "to-binary"){
@@ -106,7 +146,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,8).toString(2);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Octal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }      
         }
         else if(convertFrom == "from-octal" && convertTo == "to-hexadecimal"){
@@ -114,7 +158,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,8).toString(16).toUpperCase();
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Octal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }       
         }
         else if(convertFrom == "from-octal" && convertTo == "to-octal"){
@@ -122,7 +170,11 @@ convert.addEventListener("click",function(){
                 result.value = input.value;
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Octal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }         
         }
         else if(convertFrom == "from-hexadecimal" && convertTo == "to-decimal"){ 
@@ -130,7 +182,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,16).toString(10);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Hexadecimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }         
         }
         else if(convertFrom == "from-hexadecimal" && convertTo == "to-octal"){ 
@@ -138,7 +194,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,16).toString(8);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Hexadecimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }       
         }
         else if(convertFrom == "from-hexadecimal" && convertTo == "to-binary"){
@@ -146,7 +206,11 @@ convert.addEventListener("click",function(){
                 result.value = parseInt(input.value,16).toString(2);
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Hexadecimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }      
         }
         else if(convertFrom == "from-hexadecimal" && convertTo == "to-hexadecimal"){
@@ -155,7 +219,11 @@ convert.addEventListener("click",function(){
                 result.value = input.value.toUpperCase();
             }
             else{
-                result.value="Please Enter Valid Input";
+                result.value="Please Enter Hexadecimal Number";
+                input.setAttribute('style','background-color:#ffcaca;');
+                input.addEventListener('click',()=>{
+                    input.removeAttribute('style','background-color:#ffcaca;');
+                })
             }      
         }
     }
